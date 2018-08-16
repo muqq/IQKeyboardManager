@@ -588,10 +588,8 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
         
         __weak typeof(self) weakSelf = self;
 
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            [self adjustPosition];
-            weakSelf.hasPendingAdjustRequest = NO;
-        }];
+        [self adjustPosition];
+        weakSelf.hasPendingAdjustRequest = NO;
     }
 }
 
