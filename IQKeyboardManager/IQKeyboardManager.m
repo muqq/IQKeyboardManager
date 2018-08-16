@@ -649,7 +649,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     //  Calculating move position. Common for both normal and special cases.
     CGFloat move = MIN(CGRectGetMinY(textFieldViewRectInRootSuperview)-topLayoutGuide, CGRectGetMaxY(textFieldViewRectInWindow)-(CGRectGetHeight(keyWindow.frame)-kbSize.height)+bottomLayoutGuide);
     if (move < 0) {
-        move = 0
+        move = 0;
     }
 
     [self showLog:[NSString stringWithFormat:@"Need to move: %.2f",move]];
